@@ -3,7 +3,15 @@
 #include "PmeStdExtrudeEndType.h"
 #include "IPmePattern.h"
 
+#include ".\PmeReferences.h"
+#include ".\PmeBrepType.h"
+#include ".\PmeBrepReferenceAPI.h"
+#include ".\PmeExplicitModelAPI.h"
+#include ".\PmeExplicitModelObjectAPI.h"
+#include ".\PmeExplicitModelObjectsAPI.h"
+
 class PmePart;
+class PmeReference;
 
 class PmeStdSolidCutExtrudeFeature :
 	public PmeStdSolidExtrudeFeature,
@@ -32,6 +40,6 @@ public:
 private:
 	void CreateSolidBody(BODY *& pBody);
 	
-	void AttachVertexName_pointbased(BODY *& pBody);
-	void AttachFaceName_pointbased(BODY *& pBody);
+	//void AttachVertexName_pointbased(BODY *& pBody);
+	//void AttachFaceName_pointbased(BODY *& pBody);
 };
